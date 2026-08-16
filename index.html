@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SadhanamPickio — Discover. Compare. Pick Better.</title>
+  <meta name="description" content="Discover trending products, useful gadgets, smart deals and value-for-money picks with SadhanamPickio.">
+  <link rel="canonical" href="https://sadhanampickio.in/">
+  <meta property="og:title" content="SadhanamPickio — Discover. Compare. Pick Better.">
+  <meta property="og:description" content="Nalla Sadhanangal, Oru Pick-il. Find useful, trending and value-for-money products.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sadhanampickio.in/">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"SadhanamPickio","url":"https://sadhanampickio.in/","potentialAction":{"@type":"SearchAction","target":"https://sadhanampickio.in/search.html?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+</head>
+<body data-page="home">
+  <div id="site-header"></div>
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow"><i class="fa-solid fa-sparkles"></i> Smart picks, made simple</span>
+          <h1>Find Something <span>Worth Picking.</span></h1>
+          <p>Discover trending products, useful gadgets, smart deals and products worth your money.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="trending.html">Explore Trending <i class="fa-solid fa-arrow-right"></i></a>
+            <a class="btn btn-light" href="deals.html">View Today’s Deals</a>
+          </div>
+          <div class="trust-row">
+            <span>✓ Curated Products</span><span>✓ Easy Comparisons</span><span>✓ Transparent Picks</span>
+          </div>
+        </div>
+        <div class="hero-visual" aria-label="Featured product discovery">
+          <div class="hero-card hero-card-main"><div class="demo-img purple">🎧</div><b>Everyday Audio Picks</b><small>Simple choices. Better value.</small></div>
+          <div class="hero-card hero-card-a"><div class="demo-img orange">🏠</div><b>Useful Home Gadgets</b></div>
+          <div class="hero-card hero-card-b"><div class="demo-img blue">✈️</div><b>Travel Essentials</b></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="trending">
+      <div class="container">
+        <div class="section-head"><div><span class="eyebrow">Popular now</span><h2>🔥 Trending Right Now</h2><p>Products people are discovering today.</p></div><a href="trending.html" class="text-link">View all <i class="fa-solid fa-arrow-right"></i></a></div>
+        <div id="trending-grid" class="product-grid"></div>
+      </div>
+    </section>
+
+    <section class="section section-muted">
+      <div class="container">
+        <div class="section-head"><div><span class="eyebrow">Save smarter</span><h2>💰 Today’s Best Deals</h2><p>Demo offers shown for development. Verify the live retailer price before purchasing.</p></div><a href="deals.html" class="text-link">View all deals <i class="fa-solid fa-arrow-right"></i></a></div>
+        <div id="deals-grid" class="product-grid"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head"><div><span class="eyebrow">Browse</span><h2>Explore Categories</h2></div><a href="categories.html" class="text-link">All categories <i class="fa-solid fa-arrow-right"></i></a></div>
+        <div id="category-grid" class="category-grid"></div>
+      </div>
+    </section>
+
+    <section class="section section-muted">
+      <div class="container price-section"><div class="section-head"><div><span class="eyebrow">Budget friendly</span><h2>Best Under ₹499</h2></div><a href="category.html?price=499" class="text-link">Explore <i class="fa-solid fa-arrow-right"></i></a></div><div id="under-499" class="product-grid product-grid-scroll"></div></div>
+    </section>
+
+    <section class="section">
+      <div class="container"><div class="section-head"><div><span class="eyebrow">Smart spending</span><h2>Best Under ₹999</h2></div><a href="category.html?price=999" class="text-link">Explore <i class="fa-solid fa-arrow-right"></i></a></div><div id="under-999" class="product-grid product-grid-scroll"></div></div>
+    </section>
+
+    <section class="section section-muted">
+      <div class="container">
+        <div class="section-head"><div><span class="eyebrow">Community picks</span><h2>Popular Products</h2></div></div>
+        <div id="popular-grid" class="product-grid"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head"><div><span class="eyebrow">Learn before you pick</span><h2>Latest Reviews & Articles</h2></div><a href="articles.html" class="text-link">Read more <i class="fa-solid fa-arrow-right"></i></a></div>
+        <div class="article-grid">
+          <article class="article-card"><div class="article-art">🎧</div><div><span class="tag">Buying Guide</span><h3>Best Everyday Audio Picks</h3><p>A simple framework for choosing headphones and earbuds without overcomplicating it.</p><a href="articles.html">Read article →</a></div></article>
+          <article class="article-card"><div class="article-art">🎒</div><div><span class="tag">Travel</span><h3>Useful Travel Gadgets</h3><p>Compact accessories that can make everyday trips more convenient.</p><a href="articles.html">Read article →</a></div></article>
+          <article class="article-card"><div class="article-art">💡</div><div><span class="tag">Ideas</span><h3>How We Pick Products</h3><p>See the criteria behind our demo recommendations and future curation system.</p><a href="articles.html">Read article →</a></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section why-section">
+      <div class="container why-grid">
+        <div><span class="eyebrow">Why us?</span><h2>Less scrolling. More confident picks.</h2><p>SadhanamPickio is designed to help you discover useful products without making shopping feel complicated.</p></div>
+        <div class="why-cards">
+          <div class="why-card"><i class="fa-solid fa-filter-circle-dollar"></i><b>Curated Products</b><span>Focus on useful and interesting picks.</span></div>
+          <div class="why-card"><i class="fa-solid fa-scale-balanced"></i><b>Easy Comparisons</b><span>See important differences quickly.</span></div>
+          <div class="why-card"><i class="fa-solid fa-arrows-rotate"></i><b>Updated Recommendations</b><span>Built to support future product updates.</span></div>
+          <div class="why-card"><i class="fa-solid fa-shield-heart"></i><b>Transparent</b><span>Affiliate relationships are clearly disclosed.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section newsletter-section">
+      <div class="container newsletter"><div><span class="eyebrow">Stay updated</span><h2>Get the best picks in your inbox.</h2><p>Newsletter UI is ready for a future email-service integration.</p></div><form id="newsletter-form" class="inline-form"><input type="email" placeholder="Enter your email" aria-label="Email address" required><button class="btn btn-primary">Subscribe</button></form></div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/products.js"></script><script src="js/app.js"></script><script src="js/search.js"></script>
+</body>
+</html>
